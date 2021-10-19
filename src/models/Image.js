@@ -7,7 +7,7 @@ class Image extends Model {
             key: DataTypes.STRING,
             name: DataTypes.STRING,
             size: DataTypes.INTEGER,
-            url: DataTypes.STRING
+            buffer: DataTypes.BLOB
         }, {
             sequelize: connection
         })

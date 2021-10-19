@@ -21,8 +21,8 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      url: { 
-        type: Sequelize.STRING,
+      buffer: { 
+        type: Sequelize.BLOB,
         allowNull: false
       },
       created_at: {

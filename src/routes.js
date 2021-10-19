@@ -12,5 +12,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/upload', multer(multerConfig).single('file'), ImageController.create);
+router.get('/:id', ImageController.show);
 
 module.exports = router;
